@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a conversion or desktop-interface problem.
+title: "[Bug]: "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App and Windows version
+      placeholder: "Convert to STL 1.0.0, Windows 11 x64"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, input format, and settings
+      description: Include a minimal model only if you have permission to share it publicly.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected result and actual result
+      description: Paste the exact error or Details message, removing private paths.
+    validations:
+      required: true
